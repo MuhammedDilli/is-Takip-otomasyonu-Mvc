@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Takip";
+    Layout = "~/Views/Shared/_LayoutCalisan.cshtml";
+
+    @model  IsTakipSistemiMVCı.Models.IsDurumModel
+}
+
+<div class="container mt-5">
+    @foreach (var isDurum in Model.isDurumlar)
+    {
+        <div class="card">
+            <div class="card-header bg-black text-center text-white">
+                @isDurum.isBaslik
+            </div>
+               <div class="card-body">
+                   <ul class="list-group list-group-flush">
+                       <li class="list-group-item">@isDurum.isAciklama</li>
+                       <li class="list-group-item"> iletilenTarih : @isDurum.iletilenTarih</li>
+                       <li class="list-group-item">yapılanTarih : @isDurum.yapılanTarih</li>
+                       <li class="list-group-item">iş Durumu : @isDurum.durumAd</li>
+                       <li class="list-group-item">iş Yorumu : @isDurum.isYorum</li>
+
+
+                   </ul>
+               </div>
+        </div>
+       <br/>
+    }
+</div>

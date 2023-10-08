@@ -1,0 +1,33 @@
+﻿@model IEnumerable<IsTakipSistemiMVCı.Models.Birimler>
+@{
+    ViewBag.Title = "Birim";
+    Layout = "~/Views/Shared/_LayoutSistemYoneticisi.cshtml";
+}
+
+<P class="mt-5">
+    @Html.ActionLink("Yeni Birim Ekle","Olustur",new {}, new {@class="btn btn-primary"})
+
+</P>
+ <table class="table table-bordered table-striped table-dark"  >
+     <tr class="text-center"> 
+         <th>
+             @Html.DisplayNameFor(model=>model.birimAd)
+         </th>
+         <th></th>
+     </tr>
+
+     @foreach(var item in Model)
+            {
+         <tr class="text-center">
+             <td>
+                 @Html.DisplayFor(modelItem => item.birimAd)
+             </td>
+            <td>
+                 @Html.ActionLink("Güncelle", "Güncelle", new { id = item.birimId }, new { @class = "btn btn-success" })
+             </td>
+             <td>
+                 @Html.ActionLink("Sil", "Sil", new { id = item.birimId }, new { @class = "btn btn-danger" })
+             </td>
+         </tr>
+            }
+</table>

@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "AyinElemani";
+    Layout = "~/Views/Shared/_LayoutYonetici.cshtml";
+}
+
+
+    
+<div class="alert alert-dark mt-5" role="alert">
+      @using(Html.BeginForm("AyinElemani", "Yonetici",FormMethod.Post,new {@class="row"  }))
+      {
+        <div class="col-4">
+               <select class="form-select" name="aylar">
+                  <option value="01">Ocak</option>
+                  <option value="02">Şubat</option>
+                  <option value="03">mart</option>
+                  <option value="04">Nisan</option>
+                  <option value="05">Mayıs</option>
+                  <option value="06">Haziran</option>
+                  <option value="07">Temmuz</option>
+                  <option value="08">Ağustos</option>
+                  <option value="09">Eylül</option>
+                  <option value="10">Ekim</option>
+                  <option value="11">Kasım</option>
+                  <option value="12">Aralık</option>
+              </select>
+        </div>
+        <div class="col-4">
+            <select class="form-select" name="yillar">
+                @foreach(var yil in ViewBag.yillar)
+                {
+                      <option value="@yil" >  @yil  </option>
+
+                }
+            </select>
+        </div>
+         <div class="col-4 d-grid gap-2 mx-auto">
+             <button class="btn btn-primary" type="submit">AYın Elemanını Getir</button>
+         </div>
+    }
+</div>

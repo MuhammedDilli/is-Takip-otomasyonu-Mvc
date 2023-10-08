@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="IsTakipDBModelStoreContainer" CdmEntityContainer="IsTakipDBEntities0">
+    <EntitySetMapping Name="Birimler">
+      <EntityTypeMapping TypeName="IsTakipDBModel.Birimler">
+        <MappingFragment StoreEntitySet="Birimler">
+          <ScalarProperty Name="aktiflik" ColumnName="aktiflik" />
+          <ScalarProperty Name="birimId" ColumnName="birimId" />
+          <ScalarProperty Name="birimAd" ColumnName="birimAd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Durumlar">
+      <EntityTypeMapping TypeName="IsTakipDBModel.Durumlar">
+        <MappingFragment StoreEntitySet="Durumlar">
+          <ScalarProperty Name="durumId" ColumnName="durumId" />
+          <ScalarProperty Name="durumAd" ColumnName="durumAd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Isler">
+      <EntityTypeMapping TypeName="IsTakipDBModel.Isler">
+        <MappingFragment StoreEntitySet="Isler">
+          <ScalarProperty Name="isOkunma" ColumnName="isOkunma" />
+          <ScalarProperty Name="isYorum" ColumnName="isYorum" />
+          <ScalarProperty Name="isId" ColumnName="isId" />
+          <ScalarProperty Name="isBaslik" ColumnName="isBaslik" />
+          <ScalarProperty Name="isAciklama" ColumnName="isAciklama" />
+          <ScalarProperty Name="isPersonelId" ColumnName="isPersonelId" />
+          <ScalarProperty Name="iletilenTarih" ColumnName="iletilenTarih" />
+          <ScalarProperty Name="yapılanTarih" ColumnName="yapılanTarih" />
+          <ScalarProperty Name="isDurumId" ColumnName="isDurumId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Personeller">
+      <EntityTypeMapping TypeName="IsTakipDBModel.Personeller">
+        <MappingFragment StoreEntitySet="Personeller">
+          <ScalarProperty Name="personelId" ColumnName="personelId" />
+          <ScalarProperty Name="personelAdSoyad" ColumnName="personelAdSoyad" />
+          <ScalarProperty Name="personelKullaniciAd" ColumnName="personelKullaniciAd" />
+          <ScalarProperty Name="personelParola" ColumnName="personelParola" />
+          <ScalarProperty Name="personelBirimId" ColumnName="personelBirimId" />
+          <ScalarProperty Name="personelYetkiTurId" ColumnName="personelYetkiTurId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="IsTakipDBModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="YetkiTurler">
+      <EntityTypeMapping TypeName="IsTakipDBModel.YetkiTurler">
+        <MappingFragment StoreEntitySet="YetkiTurler">
+          <ScalarProperty Name="yetkiTurId" ColumnName="yetkiTurId" />
+          <ScalarProperty Name="yetkiTurAd" ColumnName="yetkiTurAd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Loglar">
+      <EntityTypeMapping TypeName="IsTakipDBModel.Loglar">
+        <MappingFragment StoreEntitySet="Loglar">
+          <ScalarProperty Name="personelId" ColumnName="personelId" />
+          <ScalarProperty Name="tarih" ColumnName="tarih" />
+          <ScalarProperty Name="controllerAd" ColumnName="controllerAd" />
+          <ScalarProperty Name="actionAd" ColumnName="actionAd" />
+          <ScalarProperty Name="logAciklama" ColumnName="logAciklama" />
+          <ScalarProperty Name="logıd" ColumnName="logıd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
